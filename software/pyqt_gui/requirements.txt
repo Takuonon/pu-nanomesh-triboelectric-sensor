@@ -1,0 +1,13 @@
+async-timeout==5.0.1
+bleak==1.1.1
+numpy==2.0.2
+pyobjc-core==11.1
+pyobjc-framework-Cocoa==11.1
+pyobjc-framework-CoreBluetooth==11.1
+pyobjc-framework-libdispatch==11.1
+PyQt6==6.10.1
+PyQt6-Qt6==6.10.1
+PyQt6_sip==13.10.2
+pyqtgraph==0.13.7
+scipy==1.13.1
+typing_extensions==4.15.0
