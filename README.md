@@ -76,17 +76,18 @@ microphone is used as the second acquisition channel in the firmware and GUI.
 
 Source figure: [`FPCB.pdf`](docs/images/FPCB.pdf)
 
-The FPCB integrates the triboelectric sensor input connector, the analog
-front-end components, the XIAO nRF52840 module, and a small battery connection
-on a compact wireless module. The signal flow is:
+Figure (a) shows the wireless module implemented on the FPCB. The board
+integrates the triboelectric sensor input connector, the analog front-end
+components, the XIAO nRF52840 module, and a small battery connection. The signal
+flow is:
 
 ```text
 Triboelectric sensor input -> charge amplifier -> voltage amplifier -> ADC -> BLE
 ```
 
-The module is designed to acquire the throat-mounted triboelectric sensor signal
-and transmit it wirelessly while remaining compact enough for on-body
-measurements.
+Figure (b) shows the current consumption during module operation. The operating
+current was approximately 10 mA; with a 100 mAh battery, the expected operating
+time was approximately 10 h per charge.
 
 Board metadata from `hardware/gerber/TENG_module-job.gbrjob`:
 
@@ -237,12 +238,6 @@ seq_lsb seq_msb ch1_lsb ch1_msb ch2_lsb ch2_msb ...
 
 The GUI converts this byte stream into a NumPy array with shape `(N, 2)`.
 Channel 1 is the ADC input; channel 2 is the PDM microphone input.
-
-## Data Availability
-
-The flexible printed circuit board design files, including PCB Gerber files,
-firmware for the BLE module, and source code for the PyQt-based graphical user
-interface are publicly provided in this repository.
 
 ## Notes
 
