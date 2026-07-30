@@ -192,6 +192,12 @@ The PC software is a PyQt6 GUI that connects to the XIAO nRF52840 over BLE,
 requests a capture, receives the interleaved two-channel data, and displays the
 waveforms.
 
+![PyQt GUI](docs/images/GUI.png)
+
+The GUI displays simultaneous two-channel recordings: the triboelectric sensor
+signal in the upper yellow trace and the PDM microphone signal in the lower blue
+trace.
+
 ### Software Design Policy
 
 - Keep the UI independent from the acquisition backend through `BaseSource`.
