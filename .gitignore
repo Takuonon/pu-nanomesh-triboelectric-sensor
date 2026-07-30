@@ -7,3 +7,5 @@ venv/
 env/
 .DS_Store
 *.csv
+docs/images/Graphical_abstract.pdf
+docs/images/graphical_abstract.png
